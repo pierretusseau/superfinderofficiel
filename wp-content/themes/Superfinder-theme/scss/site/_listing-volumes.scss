@@ -1,0 +1,34 @@
+.volume {
+    background-color: #262626;
+    border-left: 6px solid $superjaune;
+    width:45% !important;
+    margin-left: 1%;
+    margin-bottom: 3%;
+    padding-bottom:0px !important;
+    padding-right:0px !important;
+    .container {
+        float:right;
+        height:150px;
+        width:110px;
+        overflow: hidden;
+        img {
+            height:100%;
+            width:100%;
+        }
+    }
+    h3 a {
+        color:#FFFFFF;
+        font-style: italic;
+        font-family: 'Neris Light', 'Arial', 'Sans serif';
+    }
+    p {
+        font-family: 'Neris Light', 'Arial', 'Sans serif';
+        font-weight:100;
+        font-size: 0.9em;
+        margin-top:5px !important;
+        strong {
+            font-weight:600;
+        }
+    }
+}
+

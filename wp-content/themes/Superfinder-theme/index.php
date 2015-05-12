@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="row">
+<div class="">
 	<div class="small-12 large-8 columns" role="main">
 
 <div id="main" class="row">

@@ -8,9 +8,9 @@
 				<a href="?issue=<?php echo $r->id; ?>">
                     <div class="container"><img class="issue_cover" src="<?php echo $r->image->small_url; ?>" alt="<?php echo $r->name; ?>"></div>
 					<h2>Issue ... #<?php echo $r->issue_number; ?></h2>
-					<h3><?php echo $r->name; ?></h3>
+					<!-- <h3><?php echo $r->name; ?></h3> -->
 				</a>
-				<small><?php echo $r->cover_date; ?></small>
+				<small><p><?php echo $r->cover_date; ?></p></small>
 			</li>
 		<?php endforeach; ?>
 		</ul>
