@@ -4,3 +4,5 @@ wp-content/uploads/
 wp-config-sample.php
 
 wp-config.php
+
+wp-content/themes/Superfinder-theme/css/foundation.css
