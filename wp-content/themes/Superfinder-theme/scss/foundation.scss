@@ -68,8 +68,12 @@
 @import "site/topbar";
 @import "site/hero";
 @import "site/footer";
+@import "site/issue";
 
 
+body {
+  background-color: #1e1e1e;
+}
 // Import entete et pied de page
 header{
 	background-color: #0f6fb9;
