@@ -42,12 +42,16 @@
 
 // Import entete et pied de page
 header{
-	background-color: #0f6fb9;
+	background-color: yellow;
 	z-index: 100000;}
 
 footer {
 	background-color: #1e1e1e;
 	z-index: 100000;}
+
+	.pictoheader {
+		width: 50%;
+	}
 @import "structure/header";
 @import "structure/footer";
 

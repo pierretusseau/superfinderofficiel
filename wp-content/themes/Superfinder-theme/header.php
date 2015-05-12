@@ -3,6 +3,8 @@
 	//	var_dump($cvine);
 	//	echo "</pre>";
 ?>
+
+
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?> >
 	<head>
@@ -37,6 +39,21 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+
+	<header id="header">
+			<div class="header-center">
+				<nav class="row">
+					<ul class="header-links">
+						<li class="header-link"><a href="index.php" class="pictoheader"><img src="wp-content/themes/Superfinder-theme/PICTOS/search.png" width='30%'></a></li>
+						<li class="header-link"><a href="#"><img src="wp-content/themes/Superfinder-theme/PICTOS/list7.png" width='30%'></a></li>
+						<li class="header-link2"><a href="#"><img src="wp-content/themes/Superfinder-theme/PICTOS/connexion.png" width='30%'></a></li>
+						<li class="header-link2"><a href="#"><img src="wp-content/themes/Superfinder-theme/PICTOS/moncompte.png" width='30%'></a></li>
+						
+					</ul>
+				</nav>
+				<?php include_once('parts/search-form.php'); ?>
+			</div>
+		</header>
 	<?php do_action('foundationPress_after_body'); ?>
 	
 	<div class="off-canvas-wrap" data-offcanvas>
@@ -61,3 +78,6 @@
 
 <section class="container" role="document">
 	<?php do_action('foundationPress_after_header'); ?>
+
+
+

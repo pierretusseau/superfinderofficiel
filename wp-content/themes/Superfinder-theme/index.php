@@ -2,17 +2,51 @@
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
-	<?php 
+	<!-- <?php 
 		$user_ID = get_current_user_id();
 		echo $user_ID;
 
 	//	global $current_user;
 		get_currentuserinfo();
-		echo '<pre>';
-		var_dump($GLOBALS['current_user']);
-		echo '</pre>';
-	?>
+		// echo '<pre>';
+		// var_dump($GLOBALS['current_user']);
+		// echo '</pre>';
+	?> -->
 
+<div id="main" class="row">
+		<a href="index.php"><h1>Superfinder</h1></a>
+
+		<?php // include_once('parts/prototype/user_link.php'); ?>
+
+		<!-- // ___________________ // -->
+		<!-- // Listing des volumes //-->
+		<?php
+			if (isset($_POST['recherche']) && ($_POST['recherche'] != "")) {
+				$res = $cvine->search($_POST['recherche']);
+				include_once('parts/listing-volumes.php');
+			}
+		?>
+
+		<!-- // ___________________ // -->
+		<!-- // Listing des numéros //-->
+		<?php
+			if (isset($_GET['volume']) && ($_GET['volume'] != "")) {
+				$res = $cvine->getIssues($_GET['volume']);
+				include_once('parts/listing-issues.php');
+			}
+		?>
+
+		<!-- // ___________________ // -->
+		<!-- // Page Issue //-->
+		<?php
+			if (isset($_GET['issue']) && ($_GET['issue'] != "")) {
+				$res = $cvine->getIssue($_GET['issue']);
+				include_once('parts/issue.php');
+			}
+		?>
+
+	</div> <!-- FIN DE LA ROW PRINCIPALE -->
+	
 	<?php if ( have_posts() ) : ?>
 
 		<?php do_action('foundationPress_before_content'); ?>
