@@ -79,9 +79,9 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
-// $total-columns: 12;
-// $column-gutter: rem-calc(30);
+$row-width: rem-calc(1024);
+$total-columns: 12;
+$column-gutter: rem-calc(10);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -114,6 +114,9 @@ $include-html-global-classes: $include-html-classes;
 // $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
+$superbleu		: #1971b6;
+$superrouge		: #e82f37;
+$superjaune		: #f9bf3b;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
