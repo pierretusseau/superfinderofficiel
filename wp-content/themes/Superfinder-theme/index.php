@@ -2,17 +2,6 @@
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
-	<!-- <?php 
-		$user_ID = get_current_user_id();
-		echo $user_ID;
-
-	//	global $current_user;
-		get_currentuserinfo();
-		// echo '<pre>';
-		// var_dump($GLOBALS['current_user']);
-		// echo '</pre>';
-	?> -->
-
 <div id="main" class="row">
 		<a href="index.php"><h1>Superfinder</h1></a>
 

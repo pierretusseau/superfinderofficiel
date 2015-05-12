@@ -52,3 +52,10 @@
 	}
 	add_action('foundationPress_before_content','MySearch',1,0);
 	// 	NOM DE L'ACTION / FUNCTION / PRIORITE / NOMBRE DE PARAMETRES !!!
+
+	function BeforeFooter() {
+
+		include_once(TEMPLATEPATH.'/parts/structure/before-footer.php');
+
+	}
+	add_action('foundationPress_before_footer','BeforeFooter',1,0);

@@ -2,7 +2,9 @@
 /*
 	Template Name: Page d'accueil
 */
-get_header(); ?>
+get_header();
+
+?>
 
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
@@ -14,6 +16,7 @@ get_header(); ?>
 			<?php do_action('foundationPress_page_before_entry_content'); ?>
 			<div class="entry-content">
 				<?php the_content(); ?>
+				
 			</div>
 			<footer>
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>

@@ -1,4 +1,4 @@
-
+	<?php do_action('foundationPress_before_footer'); ?>
 	<footer>
 		<div class="row">
 			<p>Copyright 2015 Pixmen</p>
