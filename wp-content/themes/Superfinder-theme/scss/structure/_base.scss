@@ -74,3 +74,24 @@ footer p {
 .pictoheader {
 	width: 50%;
 }
+
+#englobissue {
+	background-color: #f9bf3a;
+	height: 290px;
+}
+
+.issue-description {
+	background-color: #262626;
+	width: 99% !important;
+	max-height: 290px;
+	float: right !important;
+
+	h3 {
+		color: white !important;
+	}
+}
+
+.issue_cover_descr {
+	float: right !important;
+	max-height: 290px;
+}
