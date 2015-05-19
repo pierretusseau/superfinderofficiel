@@ -29,7 +29,18 @@ require_once('library/actions.php');
 // Définir mes GLOBAL
 // define("PARTS","PARTS/");
 
+add_action( 'wp_ajax_Addlist', 'Addlist' );
+add_action( 'wp_ajax_nopriv_Addlist', 'Addlist' );
 
+function Addlist() {
 
+    global $current_user, $wpdb;
 
-?>
+    $IDUser = $current_user->data->ID;
+    $IDVolume = $_POST['param'];
+
+    $insert = $wpdb->insert($wpdb->prefix.'_issue', array('ID' => $IDVolume, 'User_ID' => $IDUser));
+    echo $insert;
+
+	die();
+}

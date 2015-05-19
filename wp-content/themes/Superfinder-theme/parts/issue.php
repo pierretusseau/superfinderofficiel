@@ -12,7 +12,6 @@
 			</li>
 		<?php endforeach; ?>
 		</ul>
-		<a href="#" class="button">Ajouter à ma collection</a>
-		<a href="#" class="button">Ajouter à ma wishlist</a>
+		<a href="test" class="button addtolist" data-issue="<?= $_GET['issue'] ?>">Ajouter à ma collection</a>
 	</div>
 <?php endif; ?>
