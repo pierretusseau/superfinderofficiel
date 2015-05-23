@@ -16,18 +16,26 @@
 }
 .header-link { // Lien du menu header
 	display: inline-block;
-	margin: 0 10px;
-	a {
-
+	margin: 0 20px;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 5px;
+    padding-left: 35px;
+    width: 100px;
+	a img {
+        width: 30px;
 	}
 }
 
 .header-link2 { // Lien du menu header
 	float:right;
 	display: inline-block;
-	margin: 0 10px;
-	a {
-
+	margin: 0 20px;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 5px;
+    padding-left: 35px;
+    width: 100px;
+	a img {
+        width: 30px;
 	}
 }
 

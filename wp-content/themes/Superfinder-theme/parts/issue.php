@@ -21,6 +21,6 @@
 			</li>
 		<?php endforeach; ?>
 		</ul>
-		<a href="test" class="button addtolist" data-issue="<?= $_GET['issue'] ?>">Ajouter à ma collection</a>
+		<a href="test" class="button addtolist" data-issue="<?= $_GET['issue'] ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/PICTOS/collection.png" alt="star"/><p>Ajouter à ma collection</p></a>
 	</div>
 <?php endif; ?>
