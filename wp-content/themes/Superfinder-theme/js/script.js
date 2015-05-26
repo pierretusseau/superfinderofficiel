@@ -15,5 +15,21 @@ $(document).ready(function(e){
 		        }
 		);	
 	});
+	$('.addtovolume').on('click', function(e) {
+		e.preventDefault();
+		var idVolume = $(this).data().volume;
+		/* Act on the event */
+		jQuery.post(
+		    ajaxurl,
+		    {
+		        'action': 'Addvolume',
+		        'param': idVolume
+		    },
+		    function(response){
+		            console.log(response);
+		    		$('.addtovolume').addClass('success').text('Volume ajouté !');
+		        }
+		);	
+	});
 });
 

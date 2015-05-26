@@ -31,15 +31,31 @@ require_once('library/actions.php');
 
 add_action( 'wp_ajax_Addlist', 'Addlist' );
 add_action( 'wp_ajax_nopriv_Addlist', 'Addlist' );
+add_action( 'wp_ajax_Addvolume', 'Addvolume' );
+add_action( 'wp_ajax_nopriv_Addvolume', 'Addvolume' );
 
 function Addlist() {
 
     global $current_user, $wpdb;
 
     $IDUser = $current_user->data->ID;
+    $IDIssue = $_POST['param'];
+
+    $insert = $wpdb->insert($wpdb->prefix.'_issue', array('ID' => $IDIssue, 'User_ID' => $IDUser));
+    echo $insert;
+
+	die();
+}
+function Addvolume() {
+
+    global $current_user, $wpdb;
+
+    $IDUser = $current_user->data->ID;
     $IDVolume = $_POST['param'];
 
-    $insert = $wpdb->insert($wpdb->prefix.'_issue', array('ID' => $IDVolume, 'User_ID' => $IDUser));
+    //$wpdb->show_errors();
+    $insert = $wpdb->insert($wpdb->prefix.'_volume', array('ID' => $IDVolume, 'User_ID' => $IDUser));
+    
     echo $insert;
 
 	die();
