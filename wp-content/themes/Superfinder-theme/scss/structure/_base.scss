@@ -2,6 +2,8 @@ body {
     background-image: url(../PICTOS/background.png);
 }
 
+.clr {clear: both;}
+
 #endtop {margin: 0 0 100px !important;height:0px;z-index: -300;position: relative;}
 #main { // Le corps principal du site prototype
 	// border-right: solid 1px #ccc;
@@ -98,4 +100,11 @@ footer p {
 .issue_cover_descr {
 	float: right !important;
 	max-height: 290px;
+}
+
+.inner-wrap {
+   display: block;
+   min-height: 80vh;
+   width:100%;
+   position: relative;
 }

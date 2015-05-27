@@ -9,8 +9,9 @@
 <a class="exit-off-canvas"></a>
 
 	<?php do_action('foundationPress_layout_end'); ?>
-	</div>
-</div>
+	</div> <?php // INNER WRAP ?>
+	<div class="clr"></div>
+</div> 	<?php // off-canvas-wrap ?>
 <?php wp_footer(); ?>
 <?php do_action('foundationPress_before_closing_body'); ?>
 </body>

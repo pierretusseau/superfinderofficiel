@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 	Template Name: Page d'accueil
 */
@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <div class="row">
-	<div class="small-12 large-12 columns" role="main">
+	<div class="small-12 large-12 columns main-results" role="main">
 
 	<?php do_action('foundationPress_before_content'); ?>
 
@@ -15,16 +15,12 @@ get_header();
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<?php do_action('foundationPress_page_before_entry_content'); ?>
 			<div class="entry-content">
-				<?php the_content(); ?>
-				
+				<?php // the_content(); ?>
 			</div>
 			<footer>
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
-			<?php // do_action('foundationPress_page_before_comments'); ?>
-			<?php // comments_template(); ?>
-			<?php // do_action('foundationPress_page_after_comments'); ?>
 		</article>
 	<?php endwhile;?>
 
