@@ -1,5 +1,13 @@
 footer {
 	min-height: 10vh;
-	z-index: 9999999;
+	z-index: 100;
 	position: relative;
+	background-color: #1e1e1e;
+}
+
+// Add some whitespace above the footer for medium-up screens
+@media #{$medium-up} {
+	footer.row {
+		margin-top: rem-calc(60);
+	}
 }

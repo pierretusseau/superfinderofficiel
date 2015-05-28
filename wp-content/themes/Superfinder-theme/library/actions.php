@@ -21,7 +21,7 @@
 				include_once(TEMPLATEPATH.'/parts/listing-volumes.php');
 			} elseif (isset($_POST['recherche']) && ($_POST['recherche'] == "")) {
 				// Si je fais une recherche, mais que le champs est vide
-				echo "<h2>Je suis donc IDIOT</h2>";
+				echo "<h2>Vous n'avez pas entré de recherche</h2>";
 			} else {
 				// Do Nothing
 			}

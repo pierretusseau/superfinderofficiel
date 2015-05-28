@@ -1,6 +1,12 @@
+// Import HEADER
+header{
+	background-color: #0f6fb9;
+	z-index: 100;
+}
+
 #header {
 	max-height: 100px;
-	width:100%;	
+	width:100%;
 	position: fixed;
 	line-height: 100px;
 }

@@ -67,20 +67,11 @@
 @import "site/wp-admin";
 @import "site/topbar";
 @import "site/hero";
-@import "site/footer";
 @import "site/listing-issues";
 @import "site/listing-volumes";
 @import "site/button";
 @import "site/dashboard";
 
-// Import entete et pied de page
-header{
-	background-color: #0f6fb9;
-	z-index: 100000;}
-
-footer {
-	background-color: #1e1e1e;
-	z-index: 100000;}
 @import "structure/header";
 @import "structure/footer";
 

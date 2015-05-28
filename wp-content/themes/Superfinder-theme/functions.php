@@ -55,8 +55,9 @@ function Addvolume() {
 
     //$wpdb->show_errors();
     $insert = $wpdb->insert($wpdb->prefix.'_volume', array('ID' => $IDVolume, 'User_ID' => $IDUser));
-    
+
     echo $insert;
 
 	die();
 }
+add_filter( 'show_admin_bar', '__return_false' );
