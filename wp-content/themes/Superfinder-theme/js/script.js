@@ -13,7 +13,7 @@ $(document).ready(function(e){
 		            console.log(response);
 		    		$('.addtolist').addClass('success').text('Ajouté !');
 		        }
-		);	
+		);
 	});
 	$('.addtovolume').on('click', function(e) {
 		e.preventDefault();
@@ -29,7 +29,21 @@ $(document).ready(function(e){
 		            console.log(response);
 		    		$('.addtovolume').addClass('success').text('Volume ajouté !');
 		        }
-		);	
+		);
+	});
+
+	var dashState = false;
+	$('#dashToogle').on('click' , function(e){
+		e.preventDefault();
+		if (dashState) {
+			// CLOSE
+			$('.dashboard').css('top','80vh');
+			dashState = false;
+		} else {
+			// OPEN
+		//	alert('OUVRE TOI');
+			$('.dashboard').css('top','10vh');
+			dashState = true;
+		}
 	});
 });
-

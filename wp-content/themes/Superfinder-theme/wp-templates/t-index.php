@@ -6,7 +6,7 @@ get_header();
 
 ?>
 
-<div class="row">
+<div class="row" id="mywrapper">
 	<div class="small-12 large-12 columns main-results" role="main">
 
 	<?php do_action('foundationPress_before_content'); ?>
@@ -17,10 +17,6 @@ get_header();
 			<div class="entry-content">
 				<?php // the_content(); ?>
 			</div>
-			<footer>
-				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
-				<p><?php the_tags(); ?></p>
-			</footer>
 		</article>
 	<?php endwhile;?>
 
