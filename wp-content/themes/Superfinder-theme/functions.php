@@ -41,7 +41,7 @@ function Addlist() {
     $IDUser = $current_user->data->ID;
     $IDIssue = $_POST['param'];
 
-    $insert = $wpdb->insert($wpdb->prefix.'_issue', array('ID' => $IDIssue, 'User_ID' => $IDUser));
+    $insert = $wpdb->insert($wpdb->prefix.'_issue', array('ID' => $IDIssue, 'User_ID' => $IDUser, 'Volume_ID' => 1));
     echo $insert;
 
 	die();
