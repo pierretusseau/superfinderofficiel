@@ -1,6 +1,8 @@
 $(document).ready(function(e){
 	$('.addtolist').on('click', function(e) {
 		e.preventDefault();
+		// Je récupère le "data-issue" écrit dans la balise html
+		// Et je l'insère dans une variable JS
 		var idIssue = $(this).data().issue;
 		/* Act on the event */
 		jQuery.post(
@@ -31,6 +33,38 @@ $(document).ready(function(e){
 		        }
 		);
 	});
+
+
+		// Dashboad scripts
+
+			// Load Dashboard content
+	//	function loadDash(){
+	//		// Insérer le script ajax ici
+	//		$.ajax({
+	//			var idIssue = $(this).data().issue;
+	//
+	//			jQuery.post(
+	//			    ajaxurl,
+	//			    {
+	//			        'action': 'Addlist',
+	//			        'param': idIssue
+	//			    },
+	//			    function(response){
+	//			            console.log(response);
+	//			    		$('.addtolist').addClass('success').text('Ajouté !');
+	//			        }
+	//			);
+	//           url: "superfinderofficiel/wp-content/themes/Superfinder-theme/parts/ajax/dashboardcontent.php",
+	//           type: "GET",
+	//           dataType: "html",
+	//           success: function(html) {
+	//           $("#dashboard-content").html(html);
+	//        }
+	//      });
+	//		// fin ajax call
+	//	}
+
+			// Expand Dashboard
 
 	var dashState = false;
 	$('#dashToogle').on('click' , function(e){
