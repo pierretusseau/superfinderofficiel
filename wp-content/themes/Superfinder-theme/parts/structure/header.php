@@ -21,6 +21,7 @@
 						<li class="header-link"><a href="#">Dashboard</a></li>
 					</ul>
 				</nav>
-				<?php include_once('parts/search-form.php'); ?>
+                <img src="http://localhost:8888/web2/superfinderofficiel/wp-content/themes/Superfinder-theme/PICTOS/done1.png" alt="precedent" class="arrow"/>
 			</div>
 		</header>
+        <?php include_once('parts/search-form.php'); ?>

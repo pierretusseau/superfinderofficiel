@@ -51,9 +51,10 @@
 
 					</ul>
 				</nav>
-				<?php include_once('parts/search-form.php'); ?>
+				<div id="logo_header"><img src="<?php echo get_stylesheet_directory_uri(); ?>/PICTOS/logo.png" alt="logo" class="logo"/></div>
 			</div>
 		</header>
+    <?php include_once('parts/search-form.php'); ?>
 	<?php do_action('foundationPress_after_body'); ?>
 
 	<div class="off-canvas-wrap" data-offcanvas>
@@ -74,7 +75,7 @@
 
 	<?php get_template_part('parts/off-canvas-menu'); ?>
 
-	<?php // get_template_part('parts/top-bar'); ?>
+	<?php //get_template_part('parts/top-bar'); ?>
 
 <section class="container" role="document">
 	<?php do_action('foundationPress_after_header'); ?>

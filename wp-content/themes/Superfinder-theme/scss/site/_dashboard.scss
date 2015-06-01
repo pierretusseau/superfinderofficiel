@@ -1,12 +1,18 @@
 .dashboard {
-   background-color: $test;
+   background: url('http://localhost:8888/web2/superfinderofficiel/wp-content/themes/Superfinder-theme/PICTOS/background.png');
    min-height:100vh;
    width:100%;
    position:fixed;
    top:80vh;
    transition: 0.4s all ease;
+   z-index:33;
    h1 {
       margin:0;
       cursor:pointer;
+      background-color: $superjaune;
+      font-size: 2em;
+      color: #FFFFFF;
+      padding-top:5px;
+      padding-bottom:5px;
    }
 }
