@@ -46,7 +46,7 @@
 					<ul class="header-links">
 						<li class="header-link"><a href="index.php" class="pictoheader"><img src="wp-content/themes/Superfinder-theme/PICTOS/search.png" width='30%'></a></li>
 						<li class="header-link"><a href="#"><img src="wp-content/themes/Superfinder-theme/PICTOS/list7.png" width='30%'></a></li>
-						<li class="header-link2"><a href="#"><img src="wp-content/themes/Superfinder-theme/PICTOS/connexion.png" width='30%'></a></li>
+						<li class="header-link2"><a href="wp-login.php"><img src="wp-content/themes/Superfinder-theme/PICTOS/connexion.png" width='30%'></a></li>
 						<li class="header-link2"><a href="#"><img src="wp-content/themes/Superfinder-theme/PICTOS/moncompte.png" width='30%'></a></li>
 
 					</ul>
