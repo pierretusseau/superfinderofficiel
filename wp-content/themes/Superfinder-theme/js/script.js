@@ -72,11 +72,13 @@ $(document).ready(function(e){
 		if (dashState) {
 			// CLOSE
 			$('.dashboard').css('top','80vh');
+            $('.dashboard h1').css('color','#FFF');
 			dashState = false;
 		} else {
 			// OPEN
 		//	alert('OUVRE TOI');
 			$('.dashboard').css('top','10vh');
+            $('.dashboard h1').css('color','#f9bf3b');
 			dashState = true;
 		}
 	});

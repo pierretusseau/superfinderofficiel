@@ -10,9 +10,14 @@
       margin:0;
       cursor:pointer;
       background-color: $superjaune;
+      font-family: 'Neris-Light';
       font-size: 2em;
       color: #FFFFFF;
       padding-top:5px;
       padding-bottom:5px;
    }
+}
+
+#dashToogle {
+    transition:0.4s all ease;
 }

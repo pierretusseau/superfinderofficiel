@@ -2,6 +2,7 @@ body {
    background-image: url(../PICTOS/background.png);
    position:relative;
    max-height: 100vh;
+   font-family: 'Neris-Light';
 // overflow: hidden;
 }
 
@@ -97,6 +98,7 @@ footer p {
 
 	h3 {
 		color: white !important;
+        font-family: 'Neris-SemiBoldItalic';
 	}
 }
 
@@ -111,4 +113,8 @@ footer p {
    min-height: 80vh;
    width:100%;
    position: relative;
+   a {
+        font-family: 'Neris-SemiBold';
+        color:#FFF;
+   }
 }
